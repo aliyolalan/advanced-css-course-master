@@ -6,9 +6,9 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 100px;
-        transition: all 0.1s;
+        transition: all 0.2s;
         position: relative;
-        font-size: 1.6rem; 
+        font-size: $default-font-size; 
     }
 
     &:hover {
@@ -30,5 +30,30 @@
     &--animated {
         animation: moveInBottom 0.5s ease-out 0.5s;
         animation-fill-mode: backwards; // Çok iyi bir özellik, unutulmaması gerekir.
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        font-weight: 500;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
     }
 }

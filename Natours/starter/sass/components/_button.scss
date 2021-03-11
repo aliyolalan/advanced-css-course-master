@@ -27,6 +27,12 @@
         font-weight: 500;
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        font-weight: 500;
+    }
+
     &--animated {
         animation: moveInBottom 0.5s ease-out 0.5s;
         animation-fill-mode: backwards; // Çok iyi bir özellik, unutulmaması gerekir.

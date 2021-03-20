@@ -41,7 +41,7 @@
         transition: all .3s;
     }
 
-    &__input:placeholder-shown + &__label {
+    &__input:placeholder-shown+&__label {
         opacity: 0;
         visibility: hidden;
         transform: translateY(-4rem);
@@ -89,7 +89,7 @@
         }
     }
 
-    &__radio-input:checked ~ &__radio-label &__radio-button::after {
+    &__radio-input:checked~&__radio-label &__radio-button::after {
         opacity: 1;
     }
 }
